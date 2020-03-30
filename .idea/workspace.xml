@@ -54,7 +54,7 @@
       <workItem from="1585269377114" duration="1073000" />
       <workItem from="1585517158160" duration="204000" />
       <workItem from="1585517407756" duration="716000" />
-      <workItem from="1585518275057" duration="4865000" />
+      <workItem from="1585518275057" duration="12949000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring widgets and create view create-transfers&quot;">
       <created>1583466996147</created>
@@ -70,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585520575430</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create Form transfers">
+      <created>1585523245723</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585523245723</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,38 +89,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="create Form transfers" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="329" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1585522949910">
+    <state x="329" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1585523582426">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="329" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585522949910" />
-    <state x="273" y="0" key="CommitChangelistDialog2" timestamp="1585520513439">
+    <state x="329" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585523582426" />
+    <state x="273" y="0" key="CommitChangelistDialog2" timestamp="1585523243598">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="273" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585520513439" />
-    <state width="989" height="2" key="GridCell.Tab.0.bottom" timestamp="1585521777780">
+    <state x="273" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585523243598" />
+    <state width="989" height="350" key="GridCell.Tab.0.bottom" timestamp="1585528803290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="989" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585521777780" />
-    <state width="989" height="2" key="GridCell.Tab.0.center" timestamp="1585521777780">
+    <state width="989" height="350" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585528803290" />
+    <state width="989" height="350" key="GridCell.Tab.0.center" timestamp="1585528803290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="989" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585521777780" />
-    <state width="989" height="2" key="GridCell.Tab.0.left" timestamp="1585521777780">
+    <state width="989" height="350" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585528803290" />
+    <state width="989" height="350" key="GridCell.Tab.0.left" timestamp="1585528803289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="989" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585521777780" />
-    <state width="989" height="2" key="GridCell.Tab.0.right" timestamp="1585521777780">
+    <state width="989" height="350" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585528803289" />
+    <state width="989" height="350" key="GridCell.Tab.0.right" timestamp="1585528803290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="989" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585521777780" />
+    <state width="989" height="350" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585528803290" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1583458889654">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583458889654" />
-    <state x="116" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585520615604">
+    <state x="116" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585523258414">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="116" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585520615604" />
+    <state x="116" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585523258414" />
     <state x="384" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1583457882701">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -122,9 +129,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1585517338478" />
+    <state x="213" y="0" width="606" height="728" key="find.popup" timestamp="1585528942262">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="0" width="606" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1585528942262" />
     <state x="180" y="164" key="run.anything.popup" timestamp="1585522599838">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="180" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585522599838" />
+    <state x="179" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585528952928">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="179" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585528952928" />
   </component>
 </project>
