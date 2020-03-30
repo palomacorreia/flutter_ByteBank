@@ -7,7 +7,7 @@ class BytebankApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(body: ListaTranferencias()),
+      home: Scaffold(body: ListaTransferencias()),
     );
   }
 }
@@ -52,7 +52,7 @@ class FormularioTransferencias extends StatelessWidget {
     if (numberAccount != null && value != null) {
       final transferCreated = Transferencia(value, numberAccount);
       debugPrint("Criando Transferência");
-      Navigator.pop(context,transferCreated);
+      Navigator.pop(context, transferCreated);
     }
   }
 }
@@ -82,24 +82,36 @@ class Editor extends StatelessWidget {
   }
 }
 
-class ListaTranferencias extends StatelessWidget {
+class ListaTransferencias extends StatefulWidget {
+  final List<Transferencia> _transferencias = List();
+
+  @override
+  State<StatefulWidget> createState() {
+    return ListaTransferenciasState();
+  }
+}
+
+class ListaTransferenciasState extends State<ListaTransferencias> {
+  //Atualizações Dinâmicas
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Transferências"),
       ),
-      body: Column(
-        children: <Widget>[
-          ItemTransferencia(Transferencia(1000, 1000)),
-          ItemTransferencia(Transferencia(200.0, 2000)),
-          ItemTransferencia(Transferencia(300.0, 3000)),
-        ],
+      body: ListView.builder(
+        itemCount: widget._transferencias.length,
+        itemBuilder: (context, index) {
+          final transfer = widget._transferencias[index];
+          return ItemTransferencia(transfer);
+        },
       ),
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add), onPressed: () {
         //callback - resposta durante navigation
-        final Future<Transferencia> future = Navigator.push(
+        final
+        Future
+        <Transferencia> future = Navigator.push(
             context, MaterialPageRoute(builder: (context) {
           return FormularioTransferencias();
         }));
@@ -107,30 +119,30 @@ class ListaTranferencias extends StatelessWidget {
         future.then((transferReceived) {
           debugPrint("chegou no future");
           debugPrint("$transferReceived");
+          widget._transferencias.add(transferReceived);
         });
       }),
     );
   }
 }
 
-
-class ItemTransferencia extends StatelessWidget {
+  class ItemTransferencia extends StatelessWidget {
   final Transferencia _transferencia;
 
   ItemTransferencia(this._transferencia);
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-        child: ListTile(
-          leading: Icon(Icons.monetization_on),
-          title: Text(_transferencia.valor.toString()),
-          subtitle: Text(_transferencia.numConta.toString()),
-        ));
+  return Card(
+  child: ListTile(
+  leading: Icon(Icons.monetization_on),
+  title: Text(_transferencia.valor.toString()),
+  subtitle: Text(_transferencia.numConta.toString()),
+  ));
   }
-}
+  }
 
-class Transferencia {
+  class Transferencia {
   final double valor;
   final int numConta;
 
@@ -138,6 +150,6 @@ class Transferencia {
 
   @override
   String toString() {
-    return 'Transferencia{valor: $valor, numConta: $numConta}';
+  return 'Transferencia{valor: $valor, numConta: $numConta}';
   }
-}
+  }
