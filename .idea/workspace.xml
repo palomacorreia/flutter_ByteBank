@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c90185bd-354b-4a50-8d1a-37c620943601" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/components/editor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/transferencia.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/transferencias/formulario.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/transferencias/lista.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
@@ -13,11 +22,19 @@
       <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/app.apk.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,12 +58,20 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/lib" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Paloma\IdeaProjects\flutter_ByteBank\lib\transferencias" />
+      <recent name="C:\Users\Paloma\IdeaProjects\flutter_ByteBank\lib" />
+      <recent name="C:\Users\Paloma\IdeaProjects\flutter_ByteBank\lib\screens\transferencia" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -64,7 +89,8 @@
       <workItem from="1585517158160" duration="204000" />
       <workItem from="1585517407756" duration="716000" />
       <workItem from="1585518275057" duration="16587000" />
-      <workItem from="1585610607072" duration="5884000" />
+      <workItem from="1585610607072" duration="9953000" />
+      <workItem from="1585627073524" duration="2324000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring widgets and create view create-transfers&quot;">
       <created>1583466996147</created>
@@ -94,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585537619975</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="form transfer landscape">
+      <created>1585623246663</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585623246663</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +136,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactoring widgets and create view create-transfers&quot;" />
     <MESSAGE value="create Form transfers" />
-    <option name="LAST_COMMIT_MESSAGE" value="create Form transfers" />
+    <MESSAGE value="form transfer landscape" />
+    <option name="LAST_COMMIT_MESSAGE" value="form transfer landscape" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Project_Structure" timestamp="1585622048134">
@@ -114,34 +148,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="329" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1585523582426" />
-    <state x="525" y="0" key="CommitChangelistDialog2" timestamp="1585541343895">
+    <state x="156" y="283" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585627294539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="525" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585541343895" />
-    <state width="1323" height="323" key="GridCell.Tab.0.bottom" timestamp="1585622897351">
+    <state x="156" y="283" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1585627294539" />
+    <state x="525" y="0" key="CommitChangelistDialog2" timestamp="1585623223987">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585622897351" />
-    <state width="1323" height="323" key="GridCell.Tab.0.center" timestamp="1585622897350">
+    <state x="525" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585623223987" />
+    <state width="901" height="252" key="GridCell.Tab.0.bottom" timestamp="1585629375511">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585622897350" />
-    <state width="1323" height="323" key="GridCell.Tab.0.left" timestamp="1585622897350">
+    <state width="901" height="252" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585629375511" />
+    <state width="901" height="252" key="GridCell.Tab.0.center" timestamp="1585629375510">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585622897350" />
-    <state width="1323" height="323" key="GridCell.Tab.0.right" timestamp="1585622897351">
+    <state width="901" height="252" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585629375510" />
+    <state width="901" height="252" key="GridCell.Tab.0.left" timestamp="1585629375510">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="323" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585622897351" />
+    <state width="901" height="252" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585629375510" />
+    <state width="901" height="252" key="GridCell.Tab.0.right" timestamp="1585629375511">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="901" height="252" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585629375511" />
+    <state x="74" y="110" key="IDE.errors.dialog" timestamp="1585625544285">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="74" y="110" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1585625544285" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1585610798179">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585610798179" />
-    <state x="116" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585541357423">
+    <state x="116" y="96" key="Vcs.Push.Dialog.v2" timestamp="1585623270013">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="116" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585541357423" />
+    <state x="116" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585623270013" />
+    <state x="310" y="141" key="chooseDestDirectoryDialog" timestamp="1585627086965">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="310" y="141" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1585627086965" />
     <state x="384" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1583457882701">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -154,10 +200,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="0" width="606" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1585528942262" />
-    <state x="180" y="164" key="run.anything.popup" timestamp="1585620944482">
+    <state x="180" y="164" key="run.anything.popup" timestamp="1585628342289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="180" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585620944482" />
+    <state x="180" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585628342289" />
     <state x="179" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585619558098">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
